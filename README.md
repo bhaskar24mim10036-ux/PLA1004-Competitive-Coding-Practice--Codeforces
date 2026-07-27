@@ -3,12 +3,12 @@
 ## Bear and Big Brother (Codeforces 791A)
 
 
+```java
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int a = sc.nextInt();
         int b = sc.nextInt();
 
@@ -20,9 +20,10 @@ public class Main {
             years++;
         }
 
-        System.out.println(years);
+    }
+}
 
-        sc.close();
+        System.out.println(years);
     }
 }
 
