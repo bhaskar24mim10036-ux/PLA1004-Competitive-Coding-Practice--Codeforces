@@ -1,29 +1,4 @@
 # PLA1004-Competitive-Coding-Practice--Codeforces
 
-## Bear and Big Brother (Codeforces 791A)
-
-
-```java
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-
-        int years = 0;
-
-        while (a <= b) {
-            a = a * 3;
-            b = b * 2;
-            years++;
-        }
-
-    }
-}
-
-        System.out.println(years);
-    }
-}
-
+## Class Id: BL2026270100440
+## Slot: A11 + A12
