@@ -1,0 +1,30 @@
+##Soft Drinking - 151A
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();   // number of friends
+        int k = sc.nextInt();   // bottles
+        int l = sc.nextInt();   // ml per bottle
+        int c = sc.nextInt();   // limes
+        int d = sc.nextInt();   // slices per lime
+        int p = sc.nextInt();   // salt
+        int nl = sc.nextInt();  // ml needed per toast
+        int np = sc.nextInt();  // salt needed per toast
+
+        int drink = (k * l) / nl;
+        int lime = c * d;
+        int salt = p / np;
+
+        int toasts = Math.min(drink, Math.min(lime, salt));
+
+        System.out.println(toasts / n);
+
+        sc.close();
+    }
+}
