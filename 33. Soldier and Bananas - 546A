@@ -1,0 +1,29 @@
+##Soldier and Bananas - 546A
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int k = sc.nextInt(); // cost of first banana
+        int n = sc.nextInt(); // dollars the soldier has
+        int w = sc.nextInt(); // number of bananas
+
+        int totalCost = 0;
+
+        for (int i = 1; i <= w; i++) {
+            totalCost += i * k;
+        }
+
+        int borrow = totalCost - n;
+
+        if (borrow < 0) {
+            borrow = 0;
+        }
+
+        System.out.println(borrow);
+
+        sc.close();
+    }
+}
