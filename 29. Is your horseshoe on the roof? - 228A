@@ -1,0 +1,30 @@
+##Is your horseshoe on the roof? - 228A
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[] a = new int[4];
+
+        for (int i = 0; i < 4; i++) {
+            a[i] = sc.nextInt();
+        }
+
+        Set<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < 4; i++) {
+            set.add(a[i]);
+        }
+
+        // We already have one horseshoe of each color in the store.
+        // So we need 4 - (number of distinct colors Valera has)
+        int answer = 4 - set.size();
+
+        System.out.println(answer);
+
+        sc.close();
+    }
+}
